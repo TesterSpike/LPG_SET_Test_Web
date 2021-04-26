@@ -22,6 +22,7 @@ the various cloud based browser and mobile remote test runners.
 *Page Object* is a common pattern to keep elements and functions limited to specific features ensuring that the test code 
 remains maintainable and easy to understand.  
 *WebDriverManager* was chosen to handle the browser driver versioning as it will automatically download the correct version for the OS and browser used. This is very useful when running it on a remote browser service where we can specifiy any number of OS, browser, and browser version combinations.
+*Singleton WebDriver* was used so that the driver didn't need to be passed from method to method but could be fetched as it was required.
 
 ### Strategy
 I would use Cypress (Javascript) to run functional tests within objects, e.g. choose your pass container. Cypress runs 
